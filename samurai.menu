@@ -1,0 +1,8 @@
+LABEL SAMURAI
+MENU LABEL ^Samurai 0.9.9
+KERNEL er/plugins/samurai/vmlinuz
+INITRD er/plugins/samurai/initrd.gz 
+APPEND boot=casper netboot=nfs nfsroot=10.0.0.1:/tftpboot/er/shares/samurai ramdisk_size=200000 nolock
+TEXT HELP
+                 Samurai.
+ENDTEXT
